@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Menu",
   "gdVersion": {
     "build": 99,
     "major": 4,
@@ -1095,6 +1095,40 @@
         "metadata": "",
         "name": "Fonts\\Quicksand\\static\\Quicksand-Light.ttf",
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Green Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Green Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Green Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Green Button_Idle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Green Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Green Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "Fonts/Quicksand/static/Quicksand-Medium.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Fonts\\Quicksand\\static\\Quicksand-Medium.ttf",
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1110,15 +1144,15 @@
   ],
   "layouts": [
     {
-      "b": 209,
+      "b": 198,
       "disableInputWhenNotFocused": true,
       "mangledName": "Menu",
       "name": "Menu",
-      "r": 209,
+      "r": 0,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 209,
+      "v": 255,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -1129,7 +1163,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6131536361224994,
+        "zoomFactor": 0.5384261990404419,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -1161,21 +1195,6 @@
           "x": 39,
           "y": 441,
           "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 928,
-          "layer": "",
-          "name": "Bg",
-          "persistentUuid": "d293185f-3784-48ba-bfda-40cd2fabaca8",
-          "width": 1142,
-          "x": -89,
-          "y": -311,
-          "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1215,12 +1234,12 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "PlayButton",
-          "persistentUuid": "2274ba55-582d-4026-9029-e566808759a5",
+          "name": "PlayText",
+          "persistentUuid": "b2606715-570e-400d-8d72-14c05bf94bb7",
           "width": 0,
-          "x": 379,
-          "y": 307,
-          "zOrder": 4,
+          "x": 419,
+          "y": 272,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1230,12 +1249,57 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "PlayText",
-          "persistentUuid": "b2606715-570e-400d-8d72-14c05bf94bb7",
+          "name": "QuitText",
+          "persistentUuid": "0bfb3af8-cbd0-47d5-8eff-84f8671839a2",
           "width": 0,
-          "x": 449,
-          "y": 327,
-          "zOrder": 5,
+          "x": 417,
+          "y": 389,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "QuitButton",
+          "persistentUuid": "0ad3dd7f-7cd0-40c7-882b-f49fd1e9c96c",
+          "width": 0,
+          "x": 348,
+          "y": 367,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 509,
+          "layer": "",
+          "name": "BgPurple",
+          "persistentUuid": "a5ad46b4-7180-4c9e-87a4-e2503c67b8c0",
+          "width": 1195,
+          "x": -132,
+          "y": 11,
+          "zOrder": -1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "PlayButton",
+          "persistentUuid": "c2083058-c0f9-4814-afdb-27f8d00a22f2",
+          "width": 0,
+          "x": 350,
+          "y": 253,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1315,30 +1379,6 @@
         {
           "assetStoreId": "",
           "height": 32,
-          "name": "Bg",
-          "tags": "",
-          "texture": "assets\\tiled_Castles Background.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
-        },
-        {
-          "assetStoreId": "",
-          "height": 64,
-          "name": "Screen",
-          "tags": "",
-          "texture": "assets\\Empty screen.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 64,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
-        },
-        {
-          "assetStoreId": "",
-          "height": 32,
           "name": "Cloud",
           "tags": "",
           "texture": "assets\\cloud (1).png",
@@ -1371,7 +1411,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "Normal",
+              "name": "Button Idle",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1380,7 +1420,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Yellow Button.png",
+                      "image": "assets\\Green Button_Idle.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1399,6 +1439,47 @@
                 }
               ]
             },
+            {
+              "name": "Clicked",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Green Button_Pressed.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "QuitButton",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
             {
               "name": "Button Idle",
               "useMultipleDirections": false,
@@ -1410,35 +1491,6 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "assets\\Yellow Button_Idle.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Hovered",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets\\Yellow Button_Hovered.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1509,6 +1561,28 @@
             "g": 0,
             "r": 0
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "QuitText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Quit :(",
+          "font": "Fonts\\Quicksand\\static\\Quicksand-Light.ttf",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "events": [
@@ -1535,7 +1609,17 @@
               "parameters": [
                 "PlayButton",
                 "=",
-                "2"
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Level1\"",
+                ""
               ]
             }
           ]
@@ -1545,11 +1629,10 @@
           "conditions": [
             {
               "type": {
-                "inverted": true,
                 "value": "SourisSurObjet"
               },
               "parameters": [
-                "PlayButton",
+                "QuitButton",
                 "",
                 "",
                 ""
@@ -1562,9 +1645,17 @@
                 "value": "ChangeAnimation"
               },
               "parameters": [
-                "PlayButton",
+                "QuitButton",
                 "=",
-                "0"
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Quit"
+              },
+              "parameters": [
+                ""
               ]
             }
           ]
@@ -1604,8 +1695,8 @@
     {
       "b": 26,
       "disableInputWhenNotFocused": true,
-      "mangledName": "Main",
-      "name": "Main",
+      "mangledName": "Level1",
+      "name": "Level1",
       "r": 11,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
@@ -1621,7 +1712,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4351295203743081,
+        "zoomFactor": 0.33553072838791165,
         "windowMask": false
       },
       "objectsGroups": [
@@ -1952,6 +2043,21 @@
           "width": 0,
           "x": 575,
           "y": -65,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Moon",
+          "persistentUuid": "dcc2e01f-0834-4b68-9eed-e12b03ce55e7",
+          "width": 0,
+          "x": 103,
+          "y": -126,
           "zOrder": 62,
           "numberProperties": [],
           "stringProperties": [],
@@ -5736,8 +5842,8 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Score: 0",
-          "font": "PTSans-Bold.ttf",
+          "string": "Score : 0...",
+          "font": "Fonts\\Quicksand\\static\\Quicksand-Bold.ttf",
           "textAlignment": "",
           "characterSize": 40,
           "color": {
@@ -6141,8 +6247,8 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Congratulations!",
-          "font": "PTSans-Bold.ttf",
+          "string": "GG !!",
+          "font": "Fonts\\Quicksand\\static\\Quicksand-Medium.ttf",
           "textAlignment": "",
           "characterSize": 60,
           "color": {
@@ -6164,7 +6270,7 @@
           "effects": [],
           "behaviors": [],
           "string": "You got 100 points!",
-          "font": "PTSans-Bold.ttf",
+          "font": "Fonts\\Quicksand\\static\\Quicksand-Medium.ttf",
           "textAlignment": "",
           "characterSize": 40,
           "color": {
@@ -6186,7 +6292,7 @@
           "effects": [],
           "behaviors": [],
           "string": "You got the highest number of points!",
-          "font": "PTSans-Bold.ttf",
+          "font": "Fonts\\Quicksand\\static\\Quicksand-Medium.ttf",
           "textAlignment": "",
           "characterSize": 40,
           "color": {
@@ -6207,8 +6313,8 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Can you get 950 points?",
-          "font": "PTSans-Bold.ttf",
+          "string": "Wanna Retry ?",
+          "font": "Fonts\\Quicksand\\static\\Quicksand-Medium.ttf",
           "textAlignment": "",
           "characterSize": 40,
           "color": {
@@ -6234,10 +6340,10 @@
               "type": "ShakeObject::ShakeObject_PositionAngle"
             }
           ],
-          "string": "Retry",
-          "font": "PTSans-Bold.ttf",
+          "string": "Retry !",
+          "font": "Fonts\\Quicksand\\static\\Quicksand-Bold.ttf",
           "textAlignment": "",
-          "characterSize": 65,
+          "characterSize": 40,
           "color": {
             "b": 255,
             "g": 255,
